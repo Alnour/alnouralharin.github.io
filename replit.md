@@ -61,6 +61,8 @@ The project uses a three-directory monorepo layout:
 
 5. **SPA with server-side fallback** — All unmatched routes return `index.html` for client-side routing via wouter.
 
+6. **File-based articles** — Articles are stored as folders in the `articles/` directory at the project root. Each folder is a slug (e.g., `my-article-name/`) containing an `index.md` file with YAML frontmatter (`title`, `description`, `date`, `tags`) and markdown body content. The server reads these folders at request time and serves them via `/api/articles` (list) and `/api/articles/:slug` (detail). Uses `gray-matter` for frontmatter parsing and `marked` for markdown-to-HTML conversion.
+
 ## External Dependencies
 
 ### Required Services
