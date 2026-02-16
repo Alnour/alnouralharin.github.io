@@ -14,5 +14,3 @@ I still remember the artistic formulation of it, "The original co-training paper
 From that time on, I tried to apply the concept whenever it could help, simply because I loved the elegance of it. I was able to use it for car classification when I was supervised by Dr. Mina Sartipi at UTC in 2020, scaling an image classification dataset automatically with very few labeled examples. I even wrote a script to automate collecting them from the web. Yes, I am too lazy, so I like to automate everything I can, to avoid repeating myself.
 
 I am really thankful for the decision to pursue this nice intersection of computer science, machine learning, and system design, or whatever you want to call it. We probably should not use names anymore, it looks like just ideas and innovations at this point in time.
-
-Btw, I love this platform called Linkedin, and I have to thank Anwar Daffa Allah, who introduced it to us when we were exploring these fields in the beginning. It feels to me like a food court in a huge conference, where people can chat freely about their ideas after presenting their serious, evidence based work.
