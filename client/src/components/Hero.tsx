@@ -20,7 +20,7 @@ export function Hero() {
             className="space-y-8 order-2 lg:order-1 animate-fade-in-up"
           >
             <div className="inline-block px-5 py-2 border border-primary/20 rounded-full bg-primary/5 backdrop-blur-md">
-              <span className="text-xs font-mono text-primary tracking-widest uppercase" data-testid="text-tagline">Senior Software Engineer</span>
+              <span className="text-xs font-mono text-primary tracking-widest uppercase" data-testid="text-tagline">Thoughts Player</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] tracking-tight text-foreground mix-blend-normal transition-colors duration-500" data-testid="text-hero-title">
@@ -29,13 +29,12 @@ export function Hero() {
             </h1>
 
             <p className="max-w-xl text-lg md:text-xl text-muted-foreground leading-relaxed font-light" data-testid="text-hero-description">
-              Senior Software Engineer at Oracle specializing in Machine Learning, 
-              Anomaly Detection, and Agentic AI systems. 
-              From the transistor to world models.
+              A "thoughts player" exploring ideas through coding, writing, research, 
+              and deep discussions. From the transistor to world models.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              {["Machine Learning", "Anomaly Detection", "RAG & Agentic AI", "Observability", "Software Architecture"].map((tag, i) => (
+              {["Machine Learning", "Software Engineering", "RAG & Agentic AI", "Computer Vision", "Software Architecture"].map((tag, i) => (
                 <span key={i} className="px-4 py-1.5 text-xs font-mono border border-border rounded-full bg-card/50 text-foreground/70" data-testid={`tag-skill-${i}`}>
                   {tag}
                 </span>
@@ -62,7 +61,7 @@ export function Hero() {
 
               <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-20">
                 <div className="bg-background/80 backdrop-blur-md border border-border px-5 py-2 rounded-full shadow-xl">
-                  <p className="text-xs font-mono text-primary whitespace-nowrap" data-testid="text-caption">ML Engineer & Researcher</p>
+              <p className="text-xs font-mono text-primary whitespace-nowrap" data-testid="text-caption">Thoughts Player</p>
                 </div>
               </div>
             </div>

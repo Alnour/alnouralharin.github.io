@@ -52,20 +52,6 @@ const publications = [
 
 const experiences = [
   {
-    role: "Senior Software Engineer",
-    company: "Oracle",
-    period: "Current",
-    description: "ML/AI research and deployment focusing on anomaly detection and outage prediction technologies for real-time monitoring systems.",
-    highlights: ["Machine Learning Engineering", "Anomaly Detection", "Outage Prediction", "Real-time Monitoring"]
-  },
-  {
-    role: "Software Engineer",
-    company: "Oracle",
-    period: "Previous",
-    description: "Software engineering projects within Oracle, contributing to product development and systems infrastructure.",
-    highlights: ["Software Engineering", "Systems Infrastructure"]
-  },
-  {
     role: "Machine Learning Research Assistant",
     company: "Center for Urban Informatics and Progress",
     period: "Research",
@@ -103,44 +89,59 @@ export default function Home() {
       <main>
         <Hero />
         
-        <LayerSection index={0} id="about" title="About" subtitle="Philosophy & Vision">
-          <div className="prose prose-invert max-w-none">
-            <p className="text-lg leading-relaxed text-muted-foreground mb-8" data-testid="text-about-intro">
-              I come from an Electrical and Electronics Engineering background, and I view the abstraction layers 
-              from physics to logic in the same way I think about higher-level computational layers.
-              I explore ideas through coding, writing, research, and deep discussions — seeing disciplines not as identities, 
-              but as powerful tools for thinking and experimentation.
+        <LayerSection index={0} id="about" title="About" subtitle="A Thoughts Player">
+          <div className="prose prose-invert max-w-none space-y-8">
+            <p className="text-lg leading-relaxed text-muted-foreground" data-testid="text-about-intro">
+              I am a "thoughts player": I explore ideas through coding, writing, research, and deep discussions.
             </p>
-            
-            <div className="grid gap-6 md:grid-cols-2">
-              {[
-                "Digital Systems Design",
-                "Programming Abstractions",
-                "Computer Networks",
-                "Machine Learning",
-                "Software Architecture",
-                "LLMs and RAG",
-                "Agentic Programming",
-                "Anomaly Detection"
-              ].map((item, i) => (
-                <div key={i} className="flex items-center gap-4 group">
-                  <div className="h-[1px] w-8 bg-border group-hover:w-12 group-hover:bg-primary transition-all duration-300" />
-                  <span className="font-mono text-sm text-foreground/80" data-testid={`text-interest-${i}`}>{item}</span>
-                </div>
-              ))}
-            </div>
-            
-            <div className="mt-12 p-6 border border-border bg-card/20 rounded-2xl">
-              <h3 className="font-serif text-xl mb-2 flex items-center gap-2">
+
+            <p className="text-base leading-relaxed text-muted-foreground" data-testid="text-about-fields">
+              Some fields I have spent significant time in, and therefore have hands-on experience with, include machine learning, software engineering, agentic programming, and retrieval-augmented generation (RAG). I tend to avoid titles, because I see these disciplines not as identities but as powerful tools for thinking and experimentation.
+            </p>
+
+            <p className="text-base leading-relaxed text-muted-foreground" data-testid="text-about-problems">
+              More concrete problems I have worked on include computer vision, observability, master data management, and software architecture and design.
+            </p>
+
+            <div className="p-6 border border-border bg-card/20 rounded-2xl">
+              <h3 className="font-serif text-xl mb-3 flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-primary" />
                 Layers on Layers on Layers
               </h3>
               <p className="text-sm text-muted-foreground" data-testid="text-novel-goal">
-                My ultimate goal in the tech industry is to write my novel. 
-                The book aims to tell the story of how we build beautiful abstractions, 
-                from the transistor to world models.
+                My ultimate goal in the tech industry is to write my novel, "Layers on Layers on Layers". The book aims to tell the story of how we build beautiful abstractions, from the transistor to world models(?). I come from an Electrical and Electronics Engineering background, and I view the abstraction layers from physics to logic in the same way I think about higher-level computational layers.
               </p>
             </div>
+
+            <div>
+              <h3 className="font-serif text-lg mb-4 text-foreground">Career Themes</h3>
+              <div className="grid gap-4 md:grid-cols-2">
+                {[
+                  "Digital systems design",
+                  "Programming abstractions",
+                  "Computer networks",
+                  "Clean design",
+                  "Machine learning",
+                  "Software design (as a concrete practice)",
+                  "LLMs and RAG",
+                  "Agentic programming",
+                  "Curiosity about the next jumps"
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-4 group">
+                    <div className="h-[1px] w-8 bg-border group-hover:w-12 group-hover:bg-primary transition-all duration-300" />
+                    <span className="font-mono text-sm text-foreground/80" data-testid={`text-interest-${i}`}>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <p className="text-base leading-relaxed text-muted-foreground" data-testid="text-about-admiration">
+              In summary, I admire people like Donald Knuth the same way I admire people like G. Hinton.
+            </p>
+
+            <p className="text-base leading-relaxed text-muted-foreground" data-testid="text-about-hobbies">
+              My hobbies include playing guitar and studying people, often through music.
+            </p>
           </div>
         </LayerSection>
 
