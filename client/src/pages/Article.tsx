@@ -43,9 +43,9 @@ export default function Article() {
 
           {isLoading && (
             <div className="space-y-4">
-              <div className="h-10 w-3/4 bg-card/20 rounded animate-pulse" />
-              <div className="h-6 w-1/2 bg-card/20 rounded animate-pulse" />
-              <div className="h-64 bg-card/20 rounded animate-pulse mt-8" />
+              <div className="h-10 w-3/4 bg-card/20 rounded-2xl animate-pulse" />
+              <div className="h-6 w-1/2 bg-card/20 rounded-2xl animate-pulse" />
+              <div className="h-64 bg-card/20 rounded-2xl animate-pulse mt-8" />
             </div>
           )}
 

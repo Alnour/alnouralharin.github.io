@@ -2,7 +2,7 @@ import { GraduationCap } from "lucide-react";
 
 export function Navigation() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 backdrop-blur-sm border-b border-border/40 transition-colors duration-500 bg-background/80">
+    <nav className="fixed top-4 left-4 right-4 z-50 flex items-center justify-between px-6 py-4 md:px-12 backdrop-blur-sm border border-border/40 rounded-full transition-colors duration-500 bg-background/80 shadow-sm">
       <a href="#" className="text-xl font-bold tracking-tight hover:text-primary transition-colors flex items-center gap-2" data-testid="link-home">
         <span className="text-primary">&gt;</span> Alnour_Alharin
       </a>

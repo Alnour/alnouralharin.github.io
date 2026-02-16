@@ -42,7 +42,7 @@ export default function Articles() {
           {isLoading && (
             <div className="space-y-6">
               {[1, 2, 3].map((i) => (
-                <div key={i} className="h-40 border border-border rounded-lg animate-pulse bg-card/20" />
+                <div key={i} className="h-40 border border-border rounded-2xl animate-pulse bg-card/20" />
               ))}
             </div>
           )}

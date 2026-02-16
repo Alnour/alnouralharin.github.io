@@ -55,7 +55,7 @@
   --border: 220 20% 80%;
   --input: 220 20% 80%;
   --ring: 220 90% 45%;
-  --radius: 2px;
+  --radius: 16px;
 }
 
 @layer base {
@@ -80,7 +80,7 @@
   }
   
   .glass-panel {
-    @apply bg-card border border-dashed border-primary/30 shadow-none;
+    @apply bg-card border border-primary/30 shadow-none rounded-2xl;
   }
 }
 

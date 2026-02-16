@@ -130,7 +130,7 @@ export default function Home() {
               ))}
             </div>
             
-            <div className="mt-12 p-6 border border-border bg-card/20 rounded-lg">
+            <div className="mt-12 p-6 border border-border bg-card/20 rounded-2xl">
               <h3 className="font-serif text-xl mb-2 flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-primary" />
                 Layers on Layers on Layers
@@ -149,7 +149,7 @@ export default function Home() {
             <div className="relative pl-8 border-l border-border/40 space-y-12">
               {experiences.map((exp, i) => (
                 <div key={i} className="relative" data-testid={`card-experience-${i}`}>
-                  <div className={`absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-background border-2 ${i === 0 ? 'border-primary' : 'border-border'}`} />
+                  <div className={`absolute -left-[37px] top-1 w-5 h-5 rounded-full bg-background border-2 ${i === 0 ? 'border-primary bg-primary/20' : 'border-border'}`} />
                   <div className="flex items-start justify-between flex-wrap gap-2 mb-2">
                     <div>
                       <h3 className="text-xl font-medium text-foreground" data-testid={`text-role-${i}`}>{exp.role}</h3>
@@ -177,7 +177,7 @@ export default function Home() {
 
         <LayerSection index={2} id="publications" title="Publications" subtitle="Research & Academic Work">
           <div className="space-y-6">
-            <div className="flex items-center gap-8 mb-8 p-4 border border-border rounded-lg bg-card/20">
+            <div className="flex items-center gap-8 mb-8 p-6 border border-border rounded-3xl bg-card/20">
               <div className="text-center">
                 <p className="text-3xl font-bold text-primary" data-testid="text-total-citations">156</p>
                 <p className="text-xs text-muted-foreground">Total Citations</p>
@@ -300,14 +300,14 @@ export default function Home() {
              </p>
              <div className="flex flex-col sm:flex-row flex-wrap gap-4">
                <a href="https://www.linkedin.com/in/alnouralharin/" target="_blank" rel="noopener noreferrer" data-testid="link-linkedin">
-                 <Button variant="outline" className="h-12 border-border hover:bg-card/40 gap-2 text-foreground w-full sm:w-auto">
+                 <Button variant="outline" className="h-12 border-border hover:bg-card/40 gap-2 text-foreground w-full sm:w-auto rounded-full px-6">
                    <Linkedin className="w-4 h-4" />
                    LinkedIn
                    <ExternalLink className="w-3 h-3 ml-1" />
                  </Button>
                </a>
                <a href="https://scholar.google.com/citations?user=gDfUnA0AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" data-testid="link-scholar">
-                 <Button variant="outline" className="h-12 border-border hover:bg-card/40 gap-2 text-foreground w-full sm:w-auto">
+                 <Button variant="outline" className="h-12 border-border hover:bg-card/40 gap-2 text-foreground w-full sm:w-auto rounded-full px-6">
                    <GraduationCap className="w-4 h-4" />
                    Google Scholar
                    <ExternalLink className="w-3 h-3 ml-1" />
