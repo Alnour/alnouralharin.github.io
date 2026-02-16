@@ -381,15 +381,6 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="bg-transparent border-border hover:border-primary/50 transition-colors" data-testid="card-education-cert">
-              <CardHeader>
-                <CardTitle className="text-lg font-medium flex items-center gap-2 text-foreground">
-                  <Award className="w-5 h-5 text-primary" />
-                  Improving Deep Neural Networks
-                </CardTitle>
-                <CardDescription>Coursera Certification</CardDescription>
-              </CardHeader>
-            </Card>
           </div>
         </LayerSection>
 
