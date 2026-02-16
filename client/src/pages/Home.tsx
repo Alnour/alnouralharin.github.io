@@ -53,9 +53,9 @@ const publications = [
 
 const experiences = [
   {
-    role: "Software Engineer",
-    company: "Oracle",
-    location: "Durham, NC",
+    role: "Senior Software Engineer",
+    company: "Oracle America",
+    location: "",
     period: "May 2021 — Present",
     description: "Building intelligent observability tools and scalable ML infrastructure. Developed the Oracle Observability Assistant for natural language interaction with monitoring systems, and designed the OCTO ML framework — a horizontally scalable MLOps solution for time-series prediction across tens of thousands of VMs. Built database outage prediction models achieving 60% detection coverage. Automated release processes reducing engineering time from a full day to 10 minutes.",
     highlights: ["LLMs & RAG", "LangChain", "PyTorch", "Kubernetes", "Prometheus", "Grafana", "GoLang", "DevOps"]
