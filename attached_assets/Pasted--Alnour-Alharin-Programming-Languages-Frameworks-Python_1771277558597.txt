@@ -1,0 +1,75 @@
+
+
+Alnour Alharin 
+Programming Languages & Frameworks: Python (Pandas, PyTorch, scikit-learn, OpenCV, Django, Django REST Framework), Golang, Java, C/C++, JavaScript, PHP, Bash scripting, Native Android development, REST APIs.
+Cloud & DevOps: Kubernetes design, architecture, and deployment; Oracle Cloud Infrastructure (OCI); Terraform; Docker; Git; Prometheus time-series monitoring stack (Prometheus, Grafana, PromQL, collectors).
+Machine Learning & AI: Predictive monitoring for time-series data, LLMs, Retrieval-Augmented Generation (RAG), LangChain, knowledge graph integration, machine learning interpretability, computer vision (object detection and tracking).
+Data Management & Databases: SQL (PostgreSQL, MySQL); API development; parallel programming; web scraping.
+Email: alnour.ahmed@gmail.com     
+LinkedIn: alnouralharin
+Phone: +1 (423) 227-2625
+Address:
+548 Cherokee Blvd, Apt #105
+Chattanooga, TN, 37405
+
+
+>SUMMARY
+
+Experienced Machine Learning Engineer with over 10  years in the software industry and a Master’s degree in Data Science. Skilled in predictive monitoring for cloud distributed applications and leveraging large language models (LLMs) for natural language processing tasks, including Retrieval-Augmented Generation (RAG) and knowledge graph integration. Have research experience in computer vision and machine learning interpretability. Strong software engineering background encompassing design and development, architecture, coding, and scripting of different systems and applications. Possesses high abstraction skills with the ability to innovate and maintain a big-picture perspective.
+
+>EXPERIENCE
+Software Engineer, Oracle | Durham 								        May 2021 - Present
+Oracle Observability Assistant: 
+Developed an intelligent assistant for the Oracle observability platform, allowing users to interact effortlessly using natural language.
+Designed and implemented features to query Prometheus, retrieve data summaries, generate Grafana dashboards, and respond to general inquiries.
+Created a knowledge graph to encapsulate and interconnect metrics, alerts, Jira tickets, system documentation, and data across the observability organization.
+Leveraged the LangChain framework to automate actions, ensuring seamless task execution and enhanced user experience.
+OCTO ML Framework Development: 
+Designed and developed the OCTO ML framework, a horizontally scalable MLOps solution for time-series data, supporting tens of thousands of VMs. Built using Python, popular ML libraries such as PyTorch and Scikit-learn, and deployed on Kubernetes via a fully automated CI/CD pipeline, the framework integrates seamlessly with Prometheus as a data source.
+ Key components include live data streamers, overnight metric collectors, model trainers, and deployment utilities. 
+The framework  features a high-performance streamer that collects data every minute and exposes it to live predictors via RESTful APIs. 
+The framework publishes results back to the system, enabling customers to create alerts on top of the processed data. Additionally, it allows developers to deploy their own time-series predictors end-to-end by writing just 10 lines of declarative code, focusing solely on the feature extraction process.
+
+Database Outage Prediction Models: 
+Developed models predicting database outages with 60% detection and 30% precision, covering 60% of outages and representing 25% of total fleet issues.
+
+Time-Series ML Pipeline Management: 
+Managed the entire pipeline for time-series machine learning models, utilizing both classical methods and deep learning techniques (ARIMA, auto-encoders, FFT, custom adaboosting, etc.). This included handling data engineering, distributed scripts, and infrastructure.
+
+Automation & Release Management: 
+Implemented DevOps techniques to automate the release processes for data collection applications deployed across hundreds of thousands of VMs, reducing engineering time from an entire day to just 10 minutes. Additionally, managed OCTO application releases and job control workflows, resolving critical issues such as OCTO agent restarts and VM configuration errors.
+Data Collection App Contributor: Contributed to the development of a data collection app, written in GoLang, used to gather data across hundreds of thousands of VMs spanning multiple realms. Responsibilities included implementing code for new metrics, debugging issues across the fleet, and deploying fixes to ensure seamless operation.
+Metrics Validator: Developed a comprehensive system to validate new Prometheus time-series metrics, enabling a test-driven development approach for metrics creation. The system scrapes historical data from existing metrics to estimate their properties and continuously monitors them to detect regressions early. It is integrated with a web UI for visualization and management and includes the ability to send alerts to Slack, ensuring quick issue identification and resolution before deploying the application to customers.
+Grafana Dashboard Migration: Wrote scripts to manage the synchronization and migration of Grafana dashboards from a legacy system to a new unified architecture, ensuring seamless user experience between the two systems during the 6-month migration period.
+Observability QA Framework Development: Designed and developed a comprehensive QA framework featuring distributed testing scripts in Bash and Python, a Flask-based web server, and serverless components using OCI functions. The system is deployed end-to-end through fully automated CI/CD pipelines. The framework targets RPM behavior and Helm chart validations, while remaining flexible enough to integrate external tests seamlessly. It significantly reduced development time by quickly identifying errors.
+Part time Lecturer,  University of Khartoum | Online		       				               Sep 2024 - Present
+Teaching the Algorithms and Data Structures course to 3rd-year students in the Faculty of Electrical and Electronics Engineering.
+
+Research Assistant,  Center for Urban Informatics and Progress (CUIP) |  Chattanooga		            Jan 2019 - May 2021
+Developed a smart city car tracking system using different object detection and tracking algorithms (computer vision).
+Proposed an algorithm for vehicles to buildings assignment that takes land-use, building size, and location into account to help build energy consumption analysis.
+Refined a hospital discharge prediction model using interpretability techniques (surrogate models and counterfactuals).
+Built an Android application for conducting Franker's psychological test, utilizing mobile movement sensors, and developed backend APIs along with a separate analysis dashboard to display the relationships between these factors.
+
+Data Engineer  and Development Team leader | Dot Energy Consulting | Khartoum	Nov 2017 - December 2018
+Built a prediction system for the network faults from the old alarms combining supervised and unsupervised learning methods (data cleansing, stemming, tokenization, clustering, and building the final learning model)
+Built a new unified interface between different systems for Zain telecom company (Zain Group).
+Information extraction from the old data (free texts) into a new interface using NLP/machine learning tools such as NLTK. 
+Built a containerized end-to-end data pipeline.
+Hired and trained the new development team (three new developers).
+Cofounder & Part-time Full-Stack Python Engineer | MobiGo | Khartoum	Oct 2016 - Nov 2017
+Led a team of 3 engineers on the technical implementation of Pocket, a payment mobile/web application for service payment and money transfer.
+Designed the system architecture on AWS and the RESTful APIs for mobile and web interfaces using Django.
+Led the testing phase with the authorities, resulting in a launch-ready product. 
+
+ Android Developer | Avatar Apps| Khartoum	Aug 2016 - Nov 2017
+Added 50% of the app’s features (at 2017) and rewrote the entire legacy code into a more maintainable version. 
+Fixed the bugs, wrote automated tests and Python scripts for content testing.
+Added a caching layer to the system and optimized the code for poorly resourced devices.
+
+>EDUCATION 
+Master of Science, Computer Science/Data Science, and Statistics, UTC.    				May 2021
+Courses: machine learning, deep learning, parallel programming, the theory of programming languages, mathematical statistics, applied statistics, advanced operating systems, advanced computer architecture, computer vision.            
+GPA: 4.0/4.0
+Bachelor of Science (Hon.), Electronic Systems Software Engineering, University of Khartoum.		Oct 2015	
+
