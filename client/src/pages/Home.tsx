@@ -39,6 +39,14 @@ const publications = [
     year: 2020,
     citations: 3,
     link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=gDfUnA0AAAAJ&citation_for_view=gDfUnA0AAAAJ:qjMakFHDy7sC"
+  },
+  {
+    title: "Deep Learning-Based Fine-Tuned Multi-Vehicle Tracking with Classification Correction",
+    authors: "A Alharin",
+    venue: "Masters Theses and Doctoral Dissertations, University of Tennessee at Chattanooga",
+    year: 2021,
+    citations: 0,
+    link: "https://scholar.utc.edu/theses/698/"
   }
 ];
 
