@@ -12,7 +12,7 @@ interface LayerSectionProps {
 
 export function LayerSection({ id, title, subtitle, children, className, index = 0 }: LayerSectionProps) {
   return (
-    <section id={id} className={cn("py-24 relative border-t border-white/5", className)}>
+    <section id={id} className={cn("py-24 relative border-t border-border/40 transition-colors duration-500", className)}>
       <div className="container px-6 md:px-12 max-w-5xl mx-auto">
         <div className="grid md:grid-cols-[300px_1fr] gap-12">
           <motion.div
@@ -22,8 +22,8 @@ export function LayerSection({ id, title, subtitle, children, className, index =
             transition={{ duration: 0.6, delay: 0.1 }}
             className="space-y-4"
           >
-            <span className="text-xs font-mono text-primary/50 tracking-widest">0{index + 1} / LAYER</span>
-            <h2 className="text-3xl md:text-4xl font-serif text-white">{title}</h2>
+            <span className="text-xs font-mono text-primary/70 tracking-widest">0{index + 1} / LAYER</span>
+            <h2 className="text-3xl md:text-4xl font-serif text-foreground">{title}</h2>
             {subtitle && <p className="text-muted-foreground font-light">{subtitle}</p>}
           </motion.div>
           
