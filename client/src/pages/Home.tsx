@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { LayerSection } from "@/components/LayerSection";
@@ -52,50 +53,97 @@ const publications = [
 
 const experiences = [
   {
-    role: "Senior Software Engineer",
-    company: "Oracle",
-    period: "Current",
-    description: "ML/AI research and deployment focusing on anomaly detection and outage prediction technologies for real-time monitoring systems.",
-    highlights: ["Machine Learning Engineering", "Anomaly Detection", "Outage Prediction", "Real-time Monitoring"]
-  },
-  {
     role: "Software Engineer",
     company: "Oracle",
-    period: "Previous",
-    description: "Software engineering projects contributing to product development and systems infrastructure.",
-    highlights: ["Software Engineering", "Systems Infrastructure"]
+    location: "Durham, NC",
+    period: "May 2021 — Present",
+    description: "Building intelligent observability tools and scalable ML infrastructure. Developed the Oracle Observability Assistant for natural language interaction with monitoring systems, and designed the OCTO ML framework — a horizontally scalable MLOps solution for time-series prediction across tens of thousands of VMs. Built database outage prediction models achieving 60% detection coverage. Automated release processes reducing engineering time from a full day to 10 minutes.",
+    highlights: ["LLMs & RAG", "LangChain", "PyTorch", "Kubernetes", "Prometheus", "Grafana", "GoLang", "DevOps"]
   },
   {
-    role: "Machine Learning Research Assistant",
-    company: "Center for Urban Informatics and Progress",
-    period: "Research",
-    description: "Conducted research on smart city car tracking using object detection and computer vision techniques.",
-    highlights: ["Computer Vision", "Object Detection", "Smart City Systems", "Traffic Analysis"]
-  },
-  {
-    role: "Teaching Assistant",
+    role: "Part-time Lecturer",
     company: "University of Khartoum",
-    period: "Academic",
-    description: "Conducted tutorials and supervised student projects across multiple computer science and engineering courses.",
-    highlights: ["Algorithms & Data Structures", "Software Development", "Artificial Neural Networks", "Software Engineering"]
+    location: "Online",
+    period: "Sep 2024 — Present",
+    description: "Teaching the Algorithms and Data Structures course to 3rd-year students in the Faculty of Electrical and Electronics Engineering.",
+    highlights: ["Algorithms", "Data Structures", "Teaching"]
   },
   {
-    role: "Co-Founder & Backend Developer",
-    company: "Semicolon",
-    period: "Entrepreneurial",
-    description: "Co-founded an IT solutions company specializing in mobile/web applications and integrated systems.",
-    highlights: ["Mobile Apps", "Web Applications", "Integrated Systems", "Backend Development"]
+    role: "Research Assistant",
+    company: "Center for Urban Informatics and Progress (CUIP)",
+    location: "Chattanooga, TN",
+    period: "Jan 2019 — May 2021",
+    description: "Developed a smart city car tracking system using object detection and tracking algorithms. Proposed a vehicle-to-building assignment algorithm for energy consumption analysis. Refined a hospital discharge prediction model using interpretability techniques including surrogate models and counterfactuals.",
+    highlights: ["Computer Vision", "Object Detection", "ML Interpretability", "Smart City Systems"]
   },
   {
-    role: "Android Backend Developer",
-    company: "Ramz",
-    period: "Part-Time",
-    description: "Developed backend systems for Android mobile applications.",
-    highlights: ["Android", "Backend Development", "Mobile Systems"]
+    role: "Data Engineer & Development Team Leader",
+    company: "Dot Energy Consulting",
+    location: "Khartoum, Sudan",
+    period: "Nov 2017 — Dec 2018",
+    description: "Built a network fault prediction system combining supervised and unsupervised learning methods. Created a unified interface between different systems for Zain telecom. Performed information extraction from legacy free-text data using NLP/ML tools. Hired and trained a new development team of three engineers.",
+    highlights: ["NLP", "Machine Learning", "Data Pipeline", "Team Leadership"]
+  },
+  {
+    role: "Co-founder & Full-Stack Engineer",
+    company: "MobiGo",
+    location: "Khartoum, Sudan",
+    period: "Oct 2016 — Nov 2017",
+    description: "Led a team of 3 engineers on the technical implementation of Pocket, a payment mobile/web application for service payment and money transfer. Designed the system architecture on AWS and RESTful APIs using Django.",
+    highlights: ["Django", "AWS", "REST APIs", "Mobile Payments", "System Architecture"]
+  },
+  {
+    role: "Android Developer",
+    company: "Avatar Apps",
+    location: "Khartoum, Sudan",
+    period: "Aug 2016 — Nov 2017",
+    description: "Added 50% of the app's features and rewrote the entire legacy codebase into a more maintainable version. Added a caching layer and optimized performance for resource-constrained devices.",
+    highlights: ["Android", "Performance Optimization", "Code Refactoring"]
   }
 ];
 
+const technologies = [
+  { name: "Python", weight: 5 },
+  { name: "PyTorch", weight: 4 },
+  { name: "scikit-learn", weight: 4 },
+  { name: "Kubernetes", weight: 4 },
+  { name: "LLMs", weight: 5 },
+  { name: "RAG", weight: 4 },
+  { name: "LangChain", weight: 4 },
+  { name: "Prometheus", weight: 4 },
+  { name: "Grafana", weight: 3 },
+  { name: "Docker", weight: 3 },
+  { name: "Terraform", weight: 3 },
+  { name: "Golang", weight: 3 },
+  { name: "Java", weight: 2 },
+  { name: "C/C++", weight: 2 },
+  { name: "JavaScript", weight: 3 },
+  { name: "Django", weight: 3 },
+  { name: "REST APIs", weight: 4 },
+  { name: "PostgreSQL", weight: 3 },
+  { name: "OpenCV", weight: 3 },
+  { name: "Pandas", weight: 3 },
+  { name: "Git", weight: 3 },
+  { name: "OCI", weight: 3 },
+  { name: "Computer Vision", weight: 4 },
+  { name: "Bash", weight: 2 },
+  { name: "PHP", weight: 1 },
+  { name: "MySQL", weight: 2 },
+  { name: "Android", weight: 2 },
+  { name: "CI/CD", weight: 3 },
+  { name: "Machine Learning", weight: 5 },
+  { name: "Deep Learning", weight: 4 },
+  { name: "Time-Series Analysis", weight: 4 },
+  { name: "NLP", weight: 3 },
+  { name: "Knowledge Graphs", weight: 3 },
+  { name: "MLOps", weight: 3 },
+  { name: "Web Scraping", weight: 2 },
+  { name: "Parallel Programming", weight: 2 },
+];
+
 export default function Home() {
+  const shuffledTechnologies = useMemo(() => [...technologies].sort(() => Math.random() - 0.5), []);
+
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/20">
       <Navigation />
@@ -168,7 +216,7 @@ export default function Home() {
                   <div className="flex items-start justify-between flex-wrap gap-2 mb-2">
                     <div>
                       <h3 className="text-xl font-medium text-foreground" data-testid={`text-role-${i}`}>{exp.role}</h3>
-                      <p className="text-base text-primary/80">{exp.company}</p>
+                      <p className="text-base text-primary/80">{exp.company}{exp.location && <span className="text-muted-foreground/60"> · {exp.location}</span>}</p>
                     </div>
                     <Badge variant="outline" className="bg-card/40 border-border text-foreground/60 text-xs">
                       {exp.period}
@@ -190,7 +238,32 @@ export default function Home() {
           </div>
         </LayerSection>
 
-        <LayerSection index={2} id="publications" title="Publications" subtitle="Research & Academic Work">
+        <LayerSection index={2} id="technologies" title="Technologies" subtitle="Tools & Skills">
+          <div className="p-8 border border-border rounded-3xl bg-card/20">
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-3">
+              {shuffledTechnologies.map((tech, i) => {
+                  const sizeClasses: Record<number, string> = {
+                    1: "text-xs text-muted-foreground/50",
+                    2: "text-sm text-muted-foreground/60",
+                    3: "text-base text-muted-foreground/80",
+                    4: "text-lg text-foreground/80 font-medium",
+                    5: "text-xl text-primary font-semibold",
+                  };
+                  return (
+                    <span
+                      key={tech.name}
+                      className={`${sizeClasses[tech.weight]} hover:text-primary transition-colors duration-300 cursor-default`}
+                      data-testid={`text-tech-${i}`}
+                    >
+                      {tech.name}
+                    </span>
+                  );
+                })}
+            </div>
+          </div>
+        </LayerSection>
+
+        <LayerSection index={3} id="publications" title="Publications" subtitle="Research & Academic Work">
           <div className="space-y-6">
             <div className="flex items-center gap-8 mb-8 p-6 border border-border rounded-3xl bg-card/20">
               <div className="text-center">
@@ -263,31 +336,43 @@ export default function Home() {
           </div>
         </LayerSection>
 
-        <LayerSection index={3} id="education" title="Education" subtitle="Academic Background">
+        <LayerSection index={4} id="education" title="Education" subtitle="Academic Background">
           <div className="space-y-8">
             <Card className="bg-transparent border-border hover:border-primary/50 transition-colors" data-testid="card-education-ms">
               <CardHeader>
-                <CardTitle className="text-lg font-medium flex items-center gap-2 text-foreground">
-                  <GraduationCap className="w-5 h-5 text-primary" />
-                  Master of Computer Science (Data Science)
-                </CardTitle>
-                <CardDescription>University of Tennessee at Chattanooga</CardDescription>
+                <div className="flex items-start justify-between flex-wrap gap-2">
+                  <div>
+                    <CardTitle className="text-lg font-medium flex items-center gap-2 text-foreground">
+                      <GraduationCap className="w-5 h-5 text-primary" />
+                      M.Sc. Computer Science / Data Science & Statistics
+                    </CardTitle>
+                    <CardDescription>University of Tennessee at Chattanooga</CardDescription>
+                  </div>
+                  <div className="text-right">
+                    <Badge variant="outline" className="bg-card/40 border-border text-foreground/60 text-xs">May 2021</Badge>
+                    <p className="text-xs text-primary mt-1 font-mono">GPA: 4.0 / 4.0</p>
+                  </div>
+                </div>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Focused on data science, machine learning research, and interpretable AI methods.
-                  Published research on reinforcement learning interpretation and healthcare ML applications.
+                  Coursework: machine learning, deep learning, parallel programming, theory of programming languages, mathematical statistics, applied statistics, advanced operating systems, advanced computer architecture, computer vision.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-transparent border-border hover:border-primary/50 transition-colors" data-testid="card-education-bs">
               <CardHeader>
-                <CardTitle className="text-lg font-medium flex items-center gap-2 text-foreground">
-                  <GraduationCap className="w-5 h-5 text-primary" />
-                  Bachelor of Electrical Engineering
-                </CardTitle>
-                <CardDescription>University of Khartoum</CardDescription>
+                <div className="flex items-start justify-between flex-wrap gap-2">
+                  <div>
+                    <CardTitle className="text-lg font-medium flex items-center gap-2 text-foreground">
+                      <GraduationCap className="w-5 h-5 text-primary" />
+                      B.Sc. (Hon.) Electronic Systems Software Engineering
+                    </CardTitle>
+                    <CardDescription>University of Khartoum</CardDescription>
+                  </div>
+                  <Badge variant="outline" className="bg-card/40 border-border text-foreground/60 text-xs">Oct 2015</Badge>
+                </div>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -308,7 +393,7 @@ export default function Home() {
           </div>
         </LayerSection>
 
-        <LayerSection index={4} id="contact" title="Connect" subtitle="Get in Touch">
+        <LayerSection index={5} id="contact" title="Connect" subtitle="Get in Touch">
            <div className="space-y-6">
              <p className="text-muted-foreground mb-6" data-testid="text-contact-intro">
                Interested in machine learning, software engineering, or just want to discuss ideas? Let's connect.
