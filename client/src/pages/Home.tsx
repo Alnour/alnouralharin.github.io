@@ -52,6 +52,20 @@ const publications = [
 
 const experiences = [
   {
+    role: "Senior Software Engineer",
+    company: "Oracle",
+    period: "Current",
+    description: "ML/AI research and deployment focusing on anomaly detection and outage prediction technologies for real-time monitoring systems.",
+    highlights: ["Machine Learning Engineering", "Anomaly Detection", "Outage Prediction", "Real-time Monitoring"]
+  },
+  {
+    role: "Software Engineer",
+    company: "Oracle",
+    period: "Previous",
+    description: "Software engineering projects contributing to product development and systems infrastructure.",
+    highlights: ["Software Engineering", "Systems Infrastructure"]
+  },
+  {
     role: "Machine Learning Research Assistant",
     company: "Center for Urban Informatics and Progress",
     period: "Research",
