@@ -45,11 +45,11 @@ export function Hero() {
           <div
             className="relative order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-in-scale"
           >
-            <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 group">
-              <div className="absolute -inset-4 bg-primary/10 rounded-full blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-700" />
-              <div className="absolute top-3 -right-3 w-full h-full border border-border rounded-full bg-card/30 backdrop-blur-sm -z-10 transform group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-500" />
+            <div className="relative w-full max-w-md aspect-[4/5] md:aspect-square lg:aspect-[4/5] group">
+              <div className="absolute -inset-4 bg-primary/10 rounded-2xl blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-700" />
+              <div className="absolute top-4 -right-4 w-full h-full border border-border rounded-2xl bg-card/30 backdrop-blur-sm -z-10 transform group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-500" />
               
-              <div className="relative h-full w-full rounded-full overflow-hidden border-2 border-border bg-card shadow-2xl">
+              <div className="relative h-full w-full rounded-2xl overflow-hidden border border-border bg-card shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent z-10 mix-blend-multiply" />
                 <img 
                   src={profilePic} 
@@ -59,9 +59,9 @@ export function Hero() {
                 />
               </div>
 
-              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-20">
-                <div className="bg-background/80 backdrop-blur-md border border-border px-5 py-2 rounded-full shadow-xl">
-              <p className="text-xs font-mono text-primary whitespace-nowrap" data-testid="text-caption">Thoughts Player</p>
+              <div className="absolute -bottom-6 -right-6 z-20">
+                <div className="bg-background/80 backdrop-blur-md border border-border px-4 py-2 rounded-full shadow-xl">
+                  <p className="text-xs font-mono text-primary" data-testid="text-caption">Thoughts Player</p>
                 </div>
               </div>
             </div>
