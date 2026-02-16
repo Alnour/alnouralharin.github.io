@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { PenTool, FileText, Leaf } from "lucide-react";
+import { Book, Grid, Beaker } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -23,24 +23,24 @@ export function ThemeSwitcher() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon" className="w-9 h-9 border-border bg-transparent hover:bg-muted text-foreground">
-          {theme === "default" && <PenTool className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />}
-          {theme === "blueprint" && <FileText className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />}
-          {theme === "botanical" && <Leaf className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />}
+          {theme === "default" && <Book className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />}
+          {theme === "swiss" && <Grid className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />}
+          {theme === "lab" && <Beaker className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />}
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("default")}>
-          <PenTool className="mr-2 h-4 w-4" />
-          <span>Paper & Ink</span>
+          <Book className="mr-2 h-4 w-4" />
+          <span>Manuscript (Classic)</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("blueprint")}>
-          <FileText className="mr-2 h-4 w-4" />
-          <span>Blueprint</span>
+        <DropdownMenuItem onClick={() => setTheme("swiss")}>
+          <Grid className="mr-2 h-4 w-4" />
+          <span>Swiss Grid (Modern)</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("botanical")}>
-          <Leaf className="mr-2 h-4 w-4" />
-          <span>Botanical</span>
+        <DropdownMenuItem onClick={() => setTheme("lab")}>
+          <Beaker className="mr-2 h-4 w-4" />
+          <span>Lab Notebook (Tech)</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

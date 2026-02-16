@@ -34,76 +34,76 @@
   --color-ring: hsl(var(--ring));
 }
 
-/* Default: Paper & Ink (Warm Cream / Maroon) */
+/* 1. MANUSCRIPT (Default): Warm, Classic, Serif-heavy */
 :root {
-  --background: 40 20% 97%;
-  --foreground: 220 10% 10%;
-  --card: 40 20% 94%;
-  --card-foreground: 220 10% 10%;
-  --popover: 40 20% 97%;
-  --popover-foreground: 220 10% 10%;
-  --primary: 12 76% 45%; 
-  --primary-foreground: 40 20% 97%;
-  --secondary: 40 10% 90%;
-  --secondary-foreground: 220 10% 10%;
-  --muted: 40 10% 85%;
-  --muted-foreground: 220 5% 40%;
-  --accent: 12 76% 45%;
-  --accent-foreground: 40 20% 97%;
+  --background: 40 30% 98%; /* Very warm cream */
+  --foreground: 25 10% 15%; /* Dark warm brown/charcoal */
+  --card: 40 30% 96%;
+  --card-foreground: 25 10% 15%;
+  --popover: 40 30% 98%;
+  --popover-foreground: 25 10% 15%;
+  --primary: 345 50% 45%; /* Deep vintage red/maroon */
+  --primary-foreground: 40 30% 98%;
+  --secondary: 40 20% 90%;
+  --secondary-foreground: 25 10% 15%;
+  --muted: 40 10% 88%;
+  --muted-foreground: 25 5% 45%;
+  --accent: 345 50% 45%;
+  --accent-foreground: 40 30% 98%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 60 9.1% 97.8%;
-  --border: 220 10% 85%;
-  --input: 220 10% 85%;
-  --ring: 12 76% 45%;
-  --radius: 0rem;
+  --border: 40 10% 85%;
+  --input: 40 10% 85%;
+  --ring: 345 50% 45%;
+  --radius: 0.5rem;
 }
 
-/* Blueprint (Technical Paper: Cool Blue / Engineering Blue) */
-[data-theme="blueprint"] {
-  --background: 210 20% 96%;
-  --foreground: 220 30% 15%;
-  --card: 210 20% 93%;
-  --card-foreground: 220 30% 15%;
-  --popover: 210 20% 96%;
-  --popover-foreground: 220 30% 15%;
-  --primary: 220 90% 40%;
-  --primary-foreground: 210 20% 96%;
+/* 2. SWISS GRID: Stark, Modern, Bold Sans */
+[data-theme="swiss"] {
+  --background: 0 0% 100%; /* Pure White */
+  --foreground: 0 0% 0%; /* Pure Black */
+  --card: 0 0% 96%; /* Very light grey */
+  --card-foreground: 0 0% 0%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 0%;
+  --primary: 16 100% 50%; /* International Orange */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 90%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 0 0% 93%;
+  --muted-foreground: 0 0% 40%;
+  --accent: 16 100% 50%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 0%; /* Black borders */
+  --input: 0 0% 0%;
+  --ring: 16 100% 50%;
+  --radius: 0px; /* Sharp edges */
+}
+
+/* 3. LAB NOTEBOOK: Technical, Monospace Only, Cool Tint */
+[data-theme="lab"] {
+  --background: 210 20% 98%; /* Slight cool blue tint */
+  --foreground: 220 40% 20%; /* Technical Navy */
+  --card: 210 20% 95%;
+  --card-foreground: 220 40% 20%;
+  --popover: 210 20% 98%;
+  --popover-foreground: 220 40% 20%;
+  --primary: 220 90% 45%; /* Engineering Blue */
+  --primary-foreground: 210 20% 98%;
   --secondary: 210 10% 90%;
-  --secondary-foreground: 220 30% 15%;
-  --muted: 210 10% 85%;
+  --secondary-foreground: 220 40% 20%;
+  --muted: 210 10% 88%;
   --muted-foreground: 220 20% 50%;
-  --accent: 220 90% 40%;
-  --accent-foreground: 210 20% 96%;
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 210 20% 96%;
-  --border: 220 20% 85%;
-  --input: 220 20% 85%;
-  --ring: 220 90% 40%;
-  --radius: 0rem;
-}
-
-/* Botanical (Natural Paper: Sage / Forest Green) */
-[data-theme="botanical"] {
-  --background: 100 10% 97%;
-  --foreground: 120 15% 15%;
-  --card: 100 10% 94%;
-  --card-foreground: 120 15% 15%;
-  --popover: 100 10% 97%;
-  --popover-foreground: 120 15% 15%;
-  --primary: 140 40% 35%;
-  --primary-foreground: 100 10% 97%;
-  --secondary: 100 10% 90%;
-  --secondary-foreground: 120 15% 15%;
-  --muted: 100 10% 85%;
-  --muted-foreground: 120 10% 45%;
-  --accent: 140 40% 35%;
-  --accent-foreground: 100 10% 97%;
+  --accent: 220 90% 45%;
+  --accent-foreground: 210 20% 98%;
   --destructive: 0 60% 50%;
-  --destructive-foreground: 100 10% 97%;
-  --border: 120 10% 85%;
-  --input: 120 10% 85%;
-  --ring: 140 40% 35%;
-  --radius: 0.5rem; /* Softer, organic corners */
+  --destructive-foreground: 210 20% 98%;
+  --border: 220 20% 80%;
+  --input: 220 20% 80%;
+  --ring: 220 90% 45%;
+  --radius: 2px;
 }
 
 @layer base {
@@ -113,8 +113,41 @@
   body {
     @apply font-sans antialiased bg-background text-foreground transition-colors duration-500;
   }
+  
+  /* TYPOGRAPHY SYSTEMS */
+  
+  /* Manuscript (Default): Elegant Serif Headers */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif italic tracking-tight;
+    @apply font-serif tracking-tight font-medium;
+  }
+
+  /* Swiss Grid: Strong Sans Headers */
+  [data-theme="swiss"] h1,
+  [data-theme="swiss"] h2,
+  [data-theme="swiss"] h3,
+  [data-theme="swiss"] h4,
+  [data-theme="swiss"] h5,
+  [data-theme="swiss"] h6 {
+    @apply font-sans font-bold tracking-tighter uppercase;
+    font-family: 'Inter', sans-serif;
+  }
+  [data-theme="swiss"] body {
+    @apply font-sans;
+  }
+
+  /* Lab Notebook: All Monospace */
+  [data-theme="lab"] h1,
+  [data-theme="lab"] h2,
+  [data-theme="lab"] h3,
+  [data-theme="lab"] h4,
+  [data-theme="lab"] h5,
+  [data-theme="lab"] h6,
+  [data-theme="lab"] body,
+  [data-theme="lab"] p,
+  [data-theme="lab"] span,
+  [data-theme="lab"] div {
+    font-family: 'JetBrains Mono', monospace !important;
+    @apply tracking-tight;
   }
 }
 
@@ -125,5 +158,13 @@
   
   .glass-panel {
     @apply bg-card/80 backdrop-blur-none border-border shadow-sm;
+  }
+
+  [data-theme="swiss"] .glass-panel {
+    @apply bg-white border-2 border-black shadow-none;
+  }
+  
+  [data-theme="lab"] .glass-panel {
+    @apply bg-card border border-dashed border-primary/30 shadow-none;
   }
 }
