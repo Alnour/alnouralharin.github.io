@@ -58,6 +58,294 @@
   --radius: 16px;
 }
 
+/* SWISS GRID: Clean, structured, red accent */
+[data-theme="swiss"] {
+  --background: 0 0% 97%;
+  --foreground: 0 0% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 10%;
+  --primary: 0 85% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 92%;
+  --secondary-foreground: 0 0% 10%;
+  --muted: 0 0% 90%;
+  --muted-foreground: 0 0% 45%;
+  --accent: 0 85% 50%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 85% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 82%;
+  --input: 0 0% 82%;
+  --ring: 0 85% 50%;
+  --radius: 0px;
+}
+
+/* LAB NOTEBOOK: Already default in :root */
+[data-theme="lab"] {
+  --background: 210 20% 98%;
+  --foreground: 220 40% 20%;
+  --card: 210 20% 95%;
+  --card-foreground: 220 40% 20%;
+  --popover: 210 20% 98%;
+  --popover-foreground: 220 40% 20%;
+  --primary: 220 90% 45%;
+  --primary-foreground: 210 20% 98%;
+  --secondary: 210 10% 90%;
+  --secondary-foreground: 220 40% 20%;
+  --muted: 210 10% 88%;
+  --muted-foreground: 220 20% 50%;
+  --accent: 220 90% 45%;
+  --accent-foreground: 210 20% 98%;
+  --destructive: 0 60% 50%;
+  --destructive-foreground: 210 20% 98%;
+  --border: 220 20% 80%;
+  --input: 220 20% 80%;
+  --ring: 220 90% 45%;
+  --radius: 16px;
+}
+
+/* MIDNIGHT DARK: Deep dark mode with cool blue accents */
+[data-theme="midnight"] {
+  --background: 230 25% 9%;
+  --foreground: 220 15% 90%;
+  --card: 230 25% 12%;
+  --card-foreground: 220 15% 90%;
+  --popover: 230 25% 11%;
+  --popover-foreground: 220 15% 90%;
+  --primary: 215 90% 55%;
+  --primary-foreground: 230 25% 9%;
+  --secondary: 230 20% 18%;
+  --secondary-foreground: 220 15% 85%;
+  --muted: 230 20% 16%;
+  --muted-foreground: 220 10% 55%;
+  --accent: 215 90% 55%;
+  --accent-foreground: 230 25% 9%;
+  --destructive: 0 65% 55%;
+  --destructive-foreground: 220 15% 95%;
+  --border: 230 15% 22%;
+  --input: 230 15% 22%;
+  --ring: 215 90% 55%;
+  --radius: 10px;
+}
+
+/* SUNSET WARM: Warm oranges, ambers, cream */
+[data-theme="sunset"] {
+  --background: 35 50% 96%;
+  --foreground: 20 40% 18%;
+  --card: 35 45% 93%;
+  --card-foreground: 20 40% 18%;
+  --popover: 35 50% 96%;
+  --popover-foreground: 20 40% 18%;
+  --primary: 25 95% 53%;
+  --primary-foreground: 35 50% 98%;
+  --secondary: 35 30% 88%;
+  --secondary-foreground: 20 40% 18%;
+  --muted: 35 25% 86%;
+  --muted-foreground: 20 20% 45%;
+  --accent: 25 95% 53%;
+  --accent-foreground: 35 50% 98%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 35 50% 98%;
+  --border: 30 25% 78%;
+  --input: 30 25% 78%;
+  --ring: 25 95% 53%;
+  --radius: 12px;
+}
+
+/* FOREST GREEN: Earthy greens, natural browns */
+[data-theme="forest"] {
+  --background: 90 15% 96%;
+  --foreground: 150 30% 15%;
+  --card: 90 15% 93%;
+  --card-foreground: 150 30% 15%;
+  --popover: 90 15% 96%;
+  --popover-foreground: 150 30% 15%;
+  --primary: 150 55% 35%;
+  --primary-foreground: 90 15% 98%;
+  --secondary: 90 12% 88%;
+  --secondary-foreground: 150 30% 15%;
+  --muted: 90 10% 85%;
+  --muted-foreground: 150 15% 45%;
+  --accent: 150 55% 35%;
+  --accent-foreground: 90 15% 98%;
+  --destructive: 0 60% 50%;
+  --destructive-foreground: 90 15% 98%;
+  --border: 100 12% 78%;
+  --input: 100 12% 78%;
+  --ring: 150 55% 35%;
+  --radius: 8px;
+}
+
+/* OCEAN BREEZE: Aqua/teal with sandy light background */
+[data-theme="ocean"] {
+  --background: 195 30% 97%;
+  --foreground: 200 35% 18%;
+  --card: 195 25% 94%;
+  --card-foreground: 200 35% 18%;
+  --popover: 195 30% 97%;
+  --popover-foreground: 200 35% 18%;
+  --primary: 185 70% 40%;
+  --primary-foreground: 195 30% 98%;
+  --secondary: 195 18% 88%;
+  --secondary-foreground: 200 35% 18%;
+  --muted: 195 15% 86%;
+  --muted-foreground: 200 18% 48%;
+  --accent: 185 70% 40%;
+  --accent-foreground: 195 30% 98%;
+  --destructive: 0 65% 52%;
+  --destructive-foreground: 195 30% 98%;
+  --border: 195 15% 78%;
+  --input: 195 15% 78%;
+  --ring: 185 70% 40%;
+  --radius: 20px;
+}
+
+/* LAVENDER DREAMS: Soft purples and lilac pastels */
+[data-theme="lavender"] {
+  --background: 270 30% 97%;
+  --foreground: 270 30% 18%;
+  --card: 270 25% 94%;
+  --card-foreground: 270 30% 18%;
+  --popover: 270 30% 97%;
+  --popover-foreground: 270 30% 18%;
+  --primary: 270 60% 55%;
+  --primary-foreground: 270 30% 98%;
+  --secondary: 270 20% 90%;
+  --secondary-foreground: 270 30% 18%;
+  --muted: 270 18% 88%;
+  --muted-foreground: 270 15% 48%;
+  --accent: 270 60% 55%;
+  --accent-foreground: 270 30% 98%;
+  --destructive: 0 60% 50%;
+  --destructive-foreground: 270 30% 98%;
+  --border: 270 15% 80%;
+  --input: 270 15% 80%;
+  --ring: 270 60% 55%;
+  --radius: 14px;
+}
+
+/* NEON CYBER: Dark background, vibrant neon accents */
+[data-theme="neon"] {
+  --background: 260 30% 8%;
+  --foreground: 160 100% 75%;
+  --card: 260 30% 11%;
+  --card-foreground: 160 80% 70%;
+  --popover: 260 30% 10%;
+  --popover-foreground: 160 80% 70%;
+  --primary: 320 100% 60%;
+  --primary-foreground: 260 30% 5%;
+  --secondary: 260 25% 16%;
+  --secondary-foreground: 160 70% 65%;
+  --muted: 260 20% 15%;
+  --muted-foreground: 260 15% 50%;
+  --accent: 160 100% 45%;
+  --accent-foreground: 260 30% 5%;
+  --destructive: 0 100% 55%;
+  --destructive-foreground: 260 30% 98%;
+  --border: 260 20% 22%;
+  --input: 260 20% 22%;
+  --ring: 320 100% 60%;
+  --radius: 4px;
+}
+
+/* ROSE GOLD: Elegant pink-gold with warm neutrals */
+[data-theme="rosegold"] {
+  --background: 20 30% 97%;
+  --foreground: 350 20% 20%;
+  --card: 20 28% 94%;
+  --card-foreground: 350 20% 20%;
+  --popover: 20 30% 97%;
+  --popover-foreground: 350 20% 20%;
+  --primary: 350 55% 55%;
+  --primary-foreground: 20 30% 98%;
+  --secondary: 20 20% 90%;
+  --secondary-foreground: 350 20% 20%;
+  --muted: 20 18% 88%;
+  --muted-foreground: 350 12% 48%;
+  --accent: 30 60% 55%;
+  --accent-foreground: 20 30% 98%;
+  --destructive: 0 65% 50%;
+  --destructive-foreground: 20 30% 98%;
+  --border: 20 18% 80%;
+  --input: 20 18% 80%;
+  --ring: 350 55% 55%;
+  --radius: 18px;
+}
+
+/* ARCTIC FROST: Icy cool whites and slate blues */
+[data-theme="arctic"] {
+  --background: 210 40% 98%;
+  --foreground: 215 30% 22%;
+  --card: 210 35% 95%;
+  --card-foreground: 215 30% 22%;
+  --popover: 210 40% 98%;
+  --popover-foreground: 215 30% 22%;
+  --primary: 210 50% 50%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 25% 90%;
+  --secondary-foreground: 215 30% 22%;
+  --muted: 210 20% 88%;
+  --muted-foreground: 210 15% 50%;
+  --accent: 200 45% 48%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 55% 50%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 210 20% 82%;
+  --input: 210 20% 82%;
+  --ring: 210 50% 50%;
+  --radius: 6px;
+}
+
+/* TERRACOTTA: Warm clay reds, desert tones */
+[data-theme="terracotta"] {
+  --background: 25 35% 95%;
+  --foreground: 15 35% 18%;
+  --card: 25 30% 91%;
+  --card-foreground: 15 35% 18%;
+  --popover: 25 35% 95%;
+  --popover-foreground: 15 35% 18%;
+  --primary: 15 65% 48%;
+  --primary-foreground: 25 35% 98%;
+  --secondary: 25 22% 86%;
+  --secondary-foreground: 15 35% 18%;
+  --muted: 25 18% 84%;
+  --muted-foreground: 15 18% 48%;
+  --accent: 15 65% 48%;
+  --accent-foreground: 25 35% 98%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 25 35% 98%;
+  --border: 20 18% 76%;
+  --input: 20 18% 76%;
+  --ring: 15 65% 48%;
+  --radius: 10px;
+}
+
+/* NOIR CONTRAST: High-contrast black & white, red accent */
+[data-theme="noir"] {
+  --background: 0 0% 5%;
+  --foreground: 0 0% 95%;
+  --card: 0 0% 8%;
+  --card-foreground: 0 0% 95%;
+  --popover: 0 0% 7%;
+  --popover-foreground: 0 0% 95%;
+  --primary: 0 80% 55%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 14%;
+  --secondary-foreground: 0 0% 90%;
+  --muted: 0 0% 12%;
+  --muted-foreground: 0 0% 55%;
+  --accent: 0 80% 55%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 80% 55%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
+  --ring: 0 80% 55%;
+  --radius: 2px;
+}
+
 @layer base {
   * {
     @apply border-border;
