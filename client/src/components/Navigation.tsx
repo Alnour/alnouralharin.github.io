@@ -1,4 +1,5 @@
 import { GraduationCap } from "lucide-react";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export function Navigation() {
   return (
@@ -15,6 +16,7 @@ export function Navigation() {
           <a href="/articles" className="hover:text-primary transition-colors" data-testid="link-articles">./Articles</a>
           <a href="/#contact" className="hover:text-primary transition-colors" data-testid="link-contact">./Contact</a>
         </div>
+        <ThemeSwitcher />
       </div>
     </nav>
   );
